@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Choose Card
+    </ion-title>
+    <ion-buttons end>
+        <a target="_blank" href="https://github.com/redbooth/scrum-poker-cards" ion-button icon-only>
+          <ion-icon name="aperture"></ion-icon>
+        </a>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides pager>
+
+      <ion-slide *ngFor="let card of cards">
+        <img [src]="'assets/images/' + card + '.png'" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+
+</ion-content>
